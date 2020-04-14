@@ -1,0 +1,45 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    color: slateblue;
+    text-decoration: underline;
+}
+
+table{
+    background-color: slateblue;
+    color: white;
+    margin: auto;
+    width: 85%;
+    padding: 10px;
+}
+
+.s_num_exam{
+    text-align: left;
+}
+
+.percent_column, #board_cell{
+    text-align: center;
+}
+
+#buttons{
+    padding: 20px;
+}
+
+#thankyou{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#goback{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}

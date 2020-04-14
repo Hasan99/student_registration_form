@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="images/saylani_logo.png" alt="Saylani logo">
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <form action="submit.html">
+        <table>
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" name="first_name" minlength="3" maxlength="30" placeholder="Enter first name"
+                        size="20" required>
+                </td>
+                <td>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" name="last_name" minlength="3" maxlength="30" placeholder="Enter last name"
+                        size="20" required>
+                </td>
+                <td>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="date" name="date_of_birth" required></td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" name="email" placeholder="Enter email address" size="20" required></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="number" name="mobile_number" size="20" maxlength="10" minlength="10"
+                        placeholder="Enter mobile number" required></td>
+                <td>(10 digit number)</td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea name="address" id="" cols="20" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city" minlength="3" maxlength="30" placeholder="Enter city name" size="20"
+                        required></td>
+                <td>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="number" size="20" name="pin_code" min="0" max="999999" maxlength="6" id=""
+                        placeholder="Enter pin code" required></td>
+                <td>(6 digit number)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" name="state" minlength="3" maxlength="30" placeholder="Enter state" size="20"
+                        required></td>
+                <td>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" name="country" minlength="3" placeholder="Enter country" size="20" required></td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="drawing" required> Drawing
+                    <input type="checkbox" name="hobbies" value="singing"> Singing
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="dancing"> Dancing
+                    <input type="checkbox" name="hobbies" value="sketching"> Sketching
+                    <input type="checkbox" name="hobbies" value="others"> Others
+                </td>
+                <td>
+                    <input type="text" name="other_hobby" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>QUALIFICATION</td>
+                <th class="s_num_exam">S. No</th>
+                <th class="s_num_exam">Examination</th>
+                <th>Board</th>
+                <th class="percent_column">Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td rowspan="5"></td>
+                <th class="s_num_exam">1</th>
+                <th class="s_num_exam">Class X</th>
+                <td><input type="text" name="class_x_board" maxlength="10"></td>
+                <td class="percent_column"><input type="number" name="class_x_percentage" min="00.00" max="100.00"></td>
+                <td><input type="number" name="class_x_passing_year" min="1900"></td>
+            </tr>
+            <tr>
+                <th class="s_num_exam">2</th>
+                <th class="s_num_exam">Class XII</th>
+                <td><input type="text" name="class_xii_board" maxlength="10"></td>
+                <td class="percent_column"><input type="number" name="class_xii_percentage" min="00.00" max="100.00">
+                </td>
+                <td><input type="number" name="class_xii_passing_year" min="1900"></td>
+            </tr>
+            <tr>
+                <th class="s_num_exam">3</th>
+                <th class="s_num_exam">Graduation</th>
+                <td><input type="text" name="class_graduation_board" maxlength="10"></td>
+                <td class="percent_column"><input type="number" name="class_graduation_percentage" min="00.00"
+                        max="100.00"></td>
+                <td><input type="number" name="class_graduation_passing_year" min="1900"></td>
+            </tr>
+            <tr>
+                <th class="s_num_exam">4</th>
+                <th class="s_num_exam">Masters</th>
+                <td><input type="text" name="class_masters_board" maxlength="10"></td>
+                <td class="percent_column"><input type="number" name="class_masters_percentage" min="00.00"
+                        max="100.00"></td>
+                <td><input type="number" name="class_masters_passing_year" min="1900"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td id="board_cell">(10 char max)</td>
+                <td class="percent_column">(upto 2 decimal)</td>
+            </tr>
+            <tr>
+                <td>COURSE APPLIED FOR</td>
+                <td>
+                    <input type="radio" name="course" value="BCA" id=""> BCA
+                    <input type="radio" name="course" value="B.Com" id=""> B.Com
+                    <input type="radio" name="course" value="B.Sc" id=""> B.Sc
+                </td>
+                <td><input type="radio" name="course" value="B.A" id=""> B.A</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td id="buttons">
+                    <input type="submit" value="Submit">
+                    <!-- <input type="submit" value="Submit" onclick="window.location.href='submit.html';"> -->
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
